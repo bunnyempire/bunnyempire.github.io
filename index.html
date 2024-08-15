@@ -11,12 +11,17 @@
             font-family: Arial, sans-serif;
             background-color: #d6f7ff;
             color: #170500;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
         .container {
+            flex: 1;
             max-width: 800px;
             margin: 0 auto;
             padding: 30px;
             text-align: center;
+            overflow-y: auto; /* Позволяет прокручивать содержимое, если оно превышает высоту */
         }
         .title {
             font-size: 24px;
@@ -24,9 +29,9 @@
             margin: 20px 0;
         }
         .description {
-            font-size: 16px;
+            font-size: 14px; /* Уменьшенный размер шрифта для описания */
             font-weight: 400;
-            margin-bottom: 60px;
+          /*  margin-bottom: 20px; /* Уменьшенный отступ */
         }
         .button {
             display: block;
@@ -45,7 +50,8 @@
         .footer {
             font-size: 14px;
             color: #808080;
-            margin-top: 30px;
+            text-align: center; /* Центрирование текста футера */
+            padding: 10px 0; /* Добавлено немного отступа */
         }
     </style>
 </head>
@@ -57,30 +63,29 @@
         
         <a href="https://t.me/+f6k3bVk3upg0ZTQy" class="button">
             Bunny chat
-            <div>Чат для взрослых кроликов. Устал после работы? Заходи здесь ты сможешь пообщаться с приятными людьми и отдохнуть от коллег.</div>
+            <div class="description">Чат для взрослых кроликов. Устал после работы? Заходи здесь ты сможешь пообщаться с приятными людьми и отдохнуть от коллег.</div>
         </a>
 
         <a href="https://t.me/+yIPAnR_WfVQ0ZTli" class="button">
             Little Bunny
-            <div>Чат для общения подростков. Если ты шаришь что такое кринж, рофл и вайб, то тебе к нам.</div>
+            <div class="description">Чат для общения подростков. Если ты шаришь что такое кринж, рофл и вайб, то тебе к нам.</div>
         </a>
 
         <a href="https://t.me/+uaVL2O0I-Yg2MGJi" class="button">
             Books in Bunny
-            <div>Книжный чат для поиска и общения о книгах.</div>
+            <div class="description">Книжный чат для поиска и общения о книгах.</div>
         </a>
 
         <a href="https://t.me/+3aq2e3IyIj4xZDAy" class="button">
             Bunny Tox
-            <div>Осторожно! Очень токсичный чат, здесь минимальные правила и тут ты сможешь выпустить пар.</div>
+            <div class="description">Осторожно! Очень токсичный чат, здесь минимальные правила и тут ты сможешь выпустить пар.</div>
         </a>
 
         <a href="https://t.me/+LYxoPlmyB2ljNGIy" class="button">
             Bunny manga
-            <div>Если тебе нравятся такие направления, как манга, манхва, но не с кем их обсудить, то быстрее присоединяйся.</div>
+            <div class="description">Если тебе нравятся такие направления, как манга, манхва, но не с кем их обсудить, то быстрее присоединяйся.</div>
         </a>
-
-        <div class="footer">Присоединяйтесь к чатам Bunny!!!</div>
     </div>
+    <div class="footer">Присоединяйтесь к чатам Bunny!!!</div>
 </body>
 </html>
